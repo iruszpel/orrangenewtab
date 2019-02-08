@@ -1,0 +1,33 @@
+.simpleReactWeather {
+    color: #fff;
+    /*font-family: weather;*/
+    font-size: 4vh;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0;
+}
+.simpleReactWeather-icon {
+    position: relative;
+    float:left;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.simpleReactWeather-temp {
+    font-size: 3.14vh;
+    color: #fff;
+    float: top-right;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    height:90%;
+    margin:auto;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.simpleReactWeather-city {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom:0;
+    font-size: 1.4vh;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}

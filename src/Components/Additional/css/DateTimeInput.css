@@ -1,0 +1,234 @@
+.dtp-root {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid hsl(0, 0%, 95%);
+  box-shadow: 0 1px 9px hsla(0, 0%, 0%, .4);
+  color: hsl(0, 0%, 25%);
+  font-size: 2.25806vh;
+  left:0; 
+  right:0;
+  margin: 0 auto;
+  top: 13vh;
+  overflow: hidden;
+  padding: 0 12px;
+  position: absolute;
+  user-select: none;
+  width: 17vw;
+  z-index: 20;
+}
+
+.dtp-root .material-icons {
+  line-height: inherit;
+}
+
+.dtp-hover-span {
+  border-radius: 4px;
+  box-shadow: 0 0 0 hsla(0, 0%, 0%, 0);
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  padding: 0 8px;
+  transition: box-shadow .1s;
+}
+
+.dtp-header,
+.dtp-footer {
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
+  display: flex;
+  height: 5.4838vh;
+  justify-content: space-between;
+  line-height: 5.4838vh;
+  margin: 0 -12px;
+}
+
+.dtp-footer {
+  justify-content: space-around;
+}
+
+.dtp-previous-month,
+.dtp-next-month {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  width: 3.07929vw;
+}
+
+.dtp-header-month,
+.dtp-header-year {
+  border-radius: 0;
+  min-width: 3.07929vw;
+  padding: 0 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dtp-header-month.dtp-selected,
+.dtp-header-year.dtp-selected {
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+.dtp-filler {
+  flex: 1;
+}
+
+.dtp-main-section {
+  align-items: center;
+  display: flex;
+  height: 31.93548vh;
+  width: 17.19953vw;
+}
+/*
+.dtp-main-section.dtp-view-years,
+.dtp-main-section.dtp-view-time {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAgMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNIDIwIDAgTCA0MCAyMCAwIDIwIFoiIGZpbGw9ImhzbCgwLCAwJSwgOTUlKSIvPgo8L3N2Zz4=),
+                    url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAgMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNIDAgMCBMIDQwIDAgMjAgMjAgWiIgZmlsbD0iaHNsKDAsIDAlLCA5NSUpIi8+Cjwvc3ZnPg==);
+  background-position: 50% 20%, 50% 90%;
+  background-repeat: no-repeat;
+}
+*/
+.dtp-main-section.dtp-view-time {
+  background-position: 50% 30px, 50% 158px;
+}
+
+.dtp-table {
+  border-collapse: collapse;
+  margin: 0;
+  max-width: 16.9361vw;
+  width: 16.9361vw;
+}
+
+.dtp-table th,
+.dtp-table td {
+  padding: 0;
+}
+
+.dtp-th-day,
+.dtp-td-day {
+  border: none;
+  height: 4.51612vh;
+  line-height: 4.51612vh;
+  padding: 0;
+  width: 2.61739vw;
+}
+
+.dtp-select-day {
+  cursor: pointer;
+}
+
+.dtp-table .dtp-th-day  {
+  font-weight: normal;
+  padding: 0;
+  text-align: center;
+  width: 2.77136vw;
+}
+
+.dtp-th-day .dtp-hover-span,
+.dtp-td-day .dtp-hover-span {
+  border-radius: 19px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 2.1555vw;
+}
+
+.dtp-td-day:hover .dtp-hover-span,
+.dtp-td-years .dtp-hover-span:hover,
+.dtp-td-months .dtp-hover-span:hover {
+  box-shadow: 1px 1px 4px hsla(0, 0%, 0%, .2),
+              0 0 2px hsla(0, 0%, 0%, .2);
+}
+
+.dtp-selected-day > .dtp-hover-span  {
+  background-color: hsl(210, 100%, 50%);
+  color: white;
+}
+
+.dtp-table .dtp-td-years,
+.dtp-table .dtp-td-months {
+  height: 5.16129vh;
+  line-height: 5.16129vh;
+  padding: 4px 0;
+  text-align: center;
+  width: 6.77444vw;
+}
+
+.dtp-time-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dtp-time-controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.dtp-time-controls .dtp-hover-span {
+  height: 5.16129vh;
+  line-height: 5.16129vh;
+}
+
+.dtp-digits {
+  display: block;
+  margin: auto;
+}
+
+.dtp-digits circle {
+   fill: black;
+}
+
+.dtp-digit-display-light {
+  fill: white;
+}
+
+.dtp-digit-display-light.on {
+  fill: black;
+}
+
+.dtp-icon-chevron-left::before {
+  content: 'chevron_left';
+}
+
+.dtp-icon-chevron-right::before {
+  content: 'chevron_right';
+}
+
+.dtp-icon-arrow-drop-up::before {
+  content: 'arrow_drop_up';
+}
+
+.dtp-icon-event::before {
+  content: 'event';
+}
+
+.dtp-icon-schedule::before {
+  content: 'schedule';
+}
+
+.dtp-icon-adjust::before {
+  content: 'adjust';
+}
+
+.dtp-icon-cancel::before {
+  content: 'cancel';
+}
+
+.dtp-icon-expand-less::before {
+  content: 'expand_less';
+}
+
+.dtp-icon-expand-more::before {
+  content: 'expand_more';
+}
+
+.dtp-transparent {
+  color: transparent;
+}

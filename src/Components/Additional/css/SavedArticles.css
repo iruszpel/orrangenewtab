@@ -1,0 +1,165 @@
+.savedArticles {
+    width: 17vw;
+    height: 45vh;
+    position: absolute;
+    overflow: hidden;
+    bottom: 6vh;
+    right: 1vw;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+#savedArticlesText {
+    position: absolute;
+    right: 1.3vw;
+    bottom: .8vh;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2vh
+}
+
+#savedArticlesText:hover {
+    text-shadow: 2px 2px 4px #000;
+    cursor: pointer
+}
+
+#articleIcon {
+    left: -35%;
+}
+
+#noArticlesBanner {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    overflow-y: auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.6vh
+}
+
+#noArticlesBanner a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    display: inline-block
+}
+
+#noAvailableArticlesBanner {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    overflow-y: auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.6vh
+}
+
+.someArticle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 3.6%;
+    word-wrap: break-word;
+    height: 11vh;
+    background-color: rgba(100, 100, 100, 0.438);
+    box-shadow: 0 1px 8px #22222283;
+    margin-left: 0.42vw;
+    margin-right: 0.42vw;
+    margin-bottom: 3%;
+    border-radius: 1%;
+}
+
+.articleTitle {
+    display: block;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 2vh;
+    color: #fff;
+    height: 90%;
+    margin-left: 35%;
+    margin-top: 2%;
+    text-overflow: ellipsis;
+    /*width: 80%;*/
+    max-width: 50%;
+    text-decoration: none;
+}
+
+.articleTitle:hover {
+    text-decoration: underline;
+}
+
+.articleImageWrapper {
+    width: 11vh;
+    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 50%;
+    background-position: center top;
+}
+
+.archiveArticleIcon {
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.archiveArticleIcon:hover {
+    color: rgb(177, 177, 177);
+}
+
+.articleAnim-enter {
+    opacity: 0.01;
+}
+
+.articleAnim-enter.articleAnim-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.articleAnim-exit {
+    opacity: 1;
+    transform: translate(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+
+.articleAnim-exit.articleAnim-exit-active {
+    opacity: 0;
+    transform: translate(15vw, 0);
+    transform: translate3d(15vw, 0, 0);
+}
+
+.articlesGroupAnim-enter {
+    opacity: 0.01;
+}
+
+.articlesGroupAnim-enter.articlesGroupAnim-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+.articlesGroupAnim-exit {
+    opacity: 1;
+    transition-property:opacity;
+    transition-duration: 300ms;
+}
+
+.articlesGroupAnim-exit.articlesGroupAnim-exit-active {
+    opacity: 0;
+}

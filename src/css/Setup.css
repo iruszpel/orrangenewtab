@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body {
+  overflow: hidden;
+}
+span {
+  display: inline-block
+}
+.Setup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: fadein 0.7s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.SetupText {
+  color: white;
+  display: block;
+  margin-top: 20vh;
+  left: 50%;
+  width: 100%
+}
+.fade {
+  animation: fadeout 0.5s;
+}
+.Select {
+  color: white;
+  display: block;
+  margin-top: 8vh;
+  left: 50%;
+  width: 100%;
+  animation: fadein 1.3s;
+}
+
+.Big {
+  color: white;
+  font-size: 6vh;
+  font-family: 'Lato', sans-serif;
+  display: block;
+  margin-top: inherit;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+
+.Small {
+  font-family: 'Lato', sans-serif;
+  margin-top: 0;
+  text-align: center;
+  font-size: 4vh;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+#small_span {
+  font-family: 'Lato', sans-serif;
+  margin-top: 0;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle
+}
+
+/*
+.data_input {
+  margin-left: 1vw
+}
+
+input[type="text"] {
+  border-width: 0 0 2px 0;
+  color: white;
+  font-size: 20px;
+  background: transparent;
+  border-bottom: 2px solid #dadada;
+  transition: border 700ms ease-in-out
+}
+
+input:focus {
+  outline: 0;
+  border-color: #9ecaed;
+  border-bottom: 2px solid #66be8c
+}
+*/
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #666;
+  font-family: Arial;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ecbea7 2px;
+  text-decoration: none;
+  background: transparent;
+  display: block;
+  cursor: pointer
+}
+
+.btn:hover {
+  text-decoration: none
+}
+
+#nextbutton {
+  text-align: center;
+  margin: auto;
+  margin-top: 4vh
+}
+
+#finishbutton {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 58vh
+}
+
+div.all {
+  display: flex;
+  flex-direction: column
+}
+
+div.Boxes1 {
+  margin: auto;
+  position: absolute;
+  left: 10vw;
+  right: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0
+}
+
+div.Boxes2 {
+  margin: auto;
+  margin-top: 28vh;
+  position: absolute;
+  left: 10vw;
+  right: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0
+}
+
+.chooseBox {
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  filter: alpha(opacity=40);
+  border-radius: 10px;
+  width: 18vw;
+  height: 22vh;
+  background: rgba(191, 191, 191, 0.5);
+  cursor: pointer;
+  flex-shrink: 1;
+  transition: background 1s;
+}
+.chooseBox.loggedIn {
+  background: rgba(119, 255, 51, 0.5);
+}
+.chooseBox.loggedIn:hover {
+  background: rgba(170, 105, 89, 0.5);
+}
+
+#gmail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vh;
+  height: 20vh
+}
+
+#github {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19vh;
+  height: 19vh
+}
+
+#wunderlist {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19vh;
+  height: 19vh
+}
+
+#googletasks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5vh;
+  width: 18vh;
+  height: 18vh
+}
+
+#googlecalendar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18vh;
+  height: 18vh
+}
+
+#trello {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5vh;
+  width: 18vh;
+  height: 18vh
+}
+
+#todoist {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5vh;
+  width: 18vh;
+  height: 18vh
+}
+#pocket {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19vh;
+  height: 19vh
+}
+#asana{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19vh;
+  height: 19vh
+}
+
+.SmallChoose {
+  margin-top: -1.2vh;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #161819
+}

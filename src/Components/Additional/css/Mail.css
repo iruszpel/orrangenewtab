@@ -1,0 +1,102 @@
+.someMail {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 3.6%;
+    word-wrap: break-word;
+    height: 11vh;
+    background-color: rgba(100, 100, 100, 0.438);
+    box-shadow: 0 1px 8px #22222283;
+    margin-left: 0.42vw;
+    margin-right: 0.42vw;
+    margin-bottom: 3%;
+    border-radius: 1%;
+}
+.mailMainTitle {
+    color: #fff;
+    font-size: 3vh;
+    margin-top: 1vh;
+    font-weight: 300;
+    text-align: center;
+}
+.mailTitle {
+    display: block;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 2vh;
+    color: #fff;
+    height: 90%;
+    margin-left: 25%;
+    margin-top: 2%;
+    text-overflow: ellipsis;
+    /*width: 80%;*/
+    max-width: 64%;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mailBold {
+    font-weight: 400;
+}
+.mailTitle:hover {
+    text-decoration: underline;
+}
+.mailFrom {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    color: #fff;
+    font-size: 1.8vh;
+}
+.mailFromLogo {
+    line-height: 11vh;
+    width: 11vh;
+    font-size: 6vh;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 50%;
+}
+.archiveMailIcon {
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    cursor: pointer;
+}
+.markAllasReadButton {
+    position: absolute;
+    right: 4%;
+    font-size: 3.6vh;
+    cursor: pointer;
+}
+.markAllasReadButton:hover {
+    color: rgb(168, 168, 168);
+}
+#noMailsBanner {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15%;
+    margin-left: 15%;
+    overflow-y: auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.6vh
+}
+#noMailsBanner a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    display: inline-block
+}
