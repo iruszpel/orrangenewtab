@@ -208,8 +208,9 @@ class Settings extends Component {
                   </div>
                } {this.state.contactVisible &&
                   <div id="contentcontact">
-                     <p>Ignacy Ruszpel</p>
+                     <p><a href="https://github.com/lopogo59">Ignacy Ruszpel</a></p>
                      <p>E-Mail: orrangenewtab@gmail.com</p>
+                     <p>Github Repo: <a href="https://github.com/lopogo59/orrangenewtab">orrangenewtab</a></p>
                   </div>
                }
             </div>

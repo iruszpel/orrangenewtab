@@ -12,7 +12,7 @@ New tab extension written in React that lets you arrange your tasks from multipl
  
 ## Build from source
 
-Fill in all your client IDs from services like Todoist, Wunderlist, Trello etc. in [.env](.env) file and Google client ID in [manifest.json](public/manifest.json) (in Cloud Platform enable Gmail API, Tasks API and Calendar API) then run
+Fill in all your client IDs from services like Todoist, Wunderlist, Trello etc. in [.env](.env) file and Google client ID in [manifest.json](public/manifest.example.json) (in Cloud Platform enable Gmail API, Tasks API and Calendar API) then run
 ```bash
 npm install
 npm run build
@@ -22,6 +22,9 @@ To build with production environment variables from [.env.production](.env.produ
 ```bash
 npm run build-production
 ```
+## Related Repos
+[orrangenewtab_api_server](https://github.com/lopogo59/orrangenewtab_api_server)
+[orrangenewtab_image_server](https://github.com/lopogo59/orrangenewtab_image_server)
 
 ## Contributing
 Any help is more than welcome as I'm doing this project in my free time. Pull requests are especially welcome. 

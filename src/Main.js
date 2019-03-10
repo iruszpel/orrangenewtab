@@ -64,7 +64,8 @@ class Main extends Component {
             tempUnits: localStorage.getItem("temperatureUnit") || 'C',
             settingsOpen: false,
             tempBackground: true,
-            currentImage: localStorage.getItem("lastImage") || 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs='
+            currentImage: localStorage.getItem("lastImage") || 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=',
+            helpHidden: localStorage.getItem('helpClosed')
         };
     }
 
@@ -222,6 +223,12 @@ class Main extends Component {
             settingsOpen: false
         })
     }
+    closeHelp = (e) => {
+        this.setState({
+            helpHidden: true
+        })
+        localStorage.setItem("helpClosed", true)
+    }
     render() {
         return (
             <div className="Main">
@@ -242,6 +249,15 @@ class Main extends Component {
                         handleClickOutside={this.handleClickOutsideSettings}
                         setBackground={this.setBackground}
                     />
+                }
+                {!this.state.helpHidden &&
+                     <div className="HelpNeeded">
+                        <p className="HelpHead">Help Needed!</p>
+                        <p className="HelpContent">Hey there! I just wanted to let you know that recently I've open-sourced this extension. 
+                        I don't have a lot of time to work on it, therefore, any help is more than welcome. 
+                        If you know anything about React/JavaScript please consider checking out the <a href="https://github.com/lopogo59/orrangenewtab">source code on Github</a></p>
+                        <span onClick={this.closeHelp} className="CloseHelp">✕</span>
+                     </div>
                 }
             </div>
         );

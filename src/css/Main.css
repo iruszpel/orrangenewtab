@@ -149,3 +149,29 @@ span {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
+.HelpNeeded {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    top: 3vh;
+    left: 4vw;
+    border-radius: 1vw;
+    font-weight: 300;
+    padding: 0 1% 0 1%;
+    width: 20vw;
+}
+.HelpContent {
+ margin-top: 1%;
+}
+.HelpHead {
+    font-size: 2.5vh;
+    font-weight: 400;
+    margin: 3% 0 0 0;
+}
+.CloseHelp {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 2.6vh;
+    cursor: pointer;
+}
